@@ -12,14 +12,24 @@
 
 // 
 // this is ANSWERED 
-//c
-const vehicle =(Make)
-let Make = "hummer"
-let Make = 'toyota'
+1.//
+const animal,height,Myname = (animal,height,Myname);
 
 
-
-
+2.//c
+const vehicle = (vehicle);
+let vehicle = "hummer"
+let vehicle = 'toyota'
+let vehicle = 'honda'
+let vehicle = 'bmw'
+let vehicle = 'volvo'
+vehicle = honda
+vehicle = toyota 
+vehicle = honda
+vehicle = bmw
+vehicle = volvo
+console.log(vehicle)
+//
 
 
 console.log(vehicle)

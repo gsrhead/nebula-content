@@ -12,17 +12,23 @@
 // 
 // this answered 1.//
 
+//
+//
+let age = "5"
+let Height = "2ft"
+let Name = "Bob"
+let Age = "2"
+let Height = "1ft"
+let Name = "dill"
+console.log(age,height,name).
+//
 
-const animal,height,Myname = (animal,height,Myname);
-
-
-2.//c
 const vehicle = (vehicle);
-let vehicle = "hummer"
-let vehicle = 'toyota'
-let vehicle = 'honda'
-let vehicle = 'bmw'
-let vehicle = 'volvo'
+let Vehicle = "hummer"
+let Color = Yellow'
+let Year = '2008'
+let Height = '4'
+let Trim = 'leather'
 vehicle = honda
 vehicle = toyota 
 vehicle = honda
@@ -33,19 +39,29 @@ console.log(vehicle)
 
 
 console.log(vehicle)
-int myNum  = "Height,3ft";   
-int myNum = "Age,5 years"
+let myNum  = "Height,3ft";   
+let myNum = "Age,5 years"
 let myName  = "Name,bate"
 //
-int myNum  = "12 ft";  
-int myNum = "5 years"
+let height  = "12 ft";  
+let age = 5;
 let myName  = "bate"
  //
 
- let carName = carName,'volvo'
- let carName = 'honda'
- let carName = 'hummer'
- let carName = 'pontiac'
- let carName =  'toyota' 
-   // console.log(height)
-   
+ let 1 = honda;
+ let 2 = hummer;
+ let 3 = pontiac;
+ let 4 = toyota;
+ console.log(1);
+ console.log(2);
+ console.log(3);
+ console.log(4);
+   let name = john
+     let age =
+     let age = 5
+let Height = 2ft
+let Name = "Bob"
+let Age = 2
+let Height = 1ft
+let Name = "dill"
+console.log(age,height,name).
