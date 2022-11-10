@@ -1,0 +1,39 @@
+// Loops Practice
+
+// 1. Write a loop that doubles each number in an array and returns the array of doubled numbers
+let inputArray = [10,21,13,13,21]
+let outputArray = Array.from(inputArray, x => x *2) // creates new array
+for (let index = 0; index < inputArray.length; index++) {
+}
+console.log(outputArray)  
+
+// 2. Write a loop that counts the number of times a letter appears in a string
+let it = ("once upon a time");
+for (let index = 0; index < it.length; index++) {
+}
+console.log(it.split("").length);
+
+// 3. Write a while loop that counts down from 10 to 0
+let number = 11;
+while (number > 0){
+    number--;
+    console.log(number)
+}
+
+// 4. Write a loop that takes an array of numbers and returns the sum of all the even numbers
+  let numbers = 1234565456456
+  for (let index = 0; index < numbers.length; index++){
+  while (numbers > 0) {   
+numbers--; 
+console.log(numbers)
+}
+
+
+    // 6. Write a loop that takes an array of numbers and returns the sum of all the numbers that are divisible by 5
+
+
+// 7. Write a while loop that adds consecutive numbers (1+2+3+4.....) and exits when the number is divisible by 7
+// ie: 1st Loop  1+2 = 3    Break if divisible by 7 False
+// ie: 2nd Loop  1+2+3 = 6  Break if divisible by 7 False
+/// ie: 3rd Loop  1+2+3 = 6  Break if divisible by 7 False
+//
