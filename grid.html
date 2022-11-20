@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>grid</title>
+<style>
+    body {
+        background-color: rgb(9, 9, 9);
+    }
+</style>
+<main>
+    <header>Header</header>
+  <article>article</article>
+    <aside>author</aside>
+    <nav>Sidebar</nav>
+
+    <footer>footer</footer>
+</main>
+</head>
+<body>
+</body>
+</html>
+<style>
+main{
+    display: grid;
+    grid-template-areas: 
+    "topbar topbar topbar" 
+    "ads content sidebar" 
+    "footer footer footer";
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 140px 180px 140px;
+  }
+  header  { grid-area: topbar; }
+  aside   { grid-area: ads; }
+  article { grid-area: content; }
+  nav     { grid-area: sidebar; }
+  footer  { grid-area: footer; }
+  
+  article{
+      background-color: rgb(199, 16, 123);
+  }
+  header{
+      background-color: rgb(252, 214, 2);
+  }
+  footer{
+      background-color: rgb(255, 206, 8);
+  }
+  nav{
+      background-color: rgb(13, 5, 255);
+  }
+  aside{
+  background-color: blue;
+  }
+  </style>
+  
