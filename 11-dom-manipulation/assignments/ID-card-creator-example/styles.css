@@ -1,0 +1,30 @@
+
+.card {
+  display: flex;
+  height:200px;
+  border-radius:10%;
+  border: solid 6px rgb(255, 255, 255);
+margin: auto;
+background-image:url('id.png');
+  width: 200px;
+background-color: red;
+color: white;
+border: 1px solid black;
+}
+
+body {
+  background-color: #262b36;
+  color: rgb(255, 251, 251);
+  text-align: center;
+  margin: auto;
+}
+
+.container {
+  border: solid 6px rgb(255, 255, 255);
+  display: flex;flex-direction: column;align-items: center;
+  width: 200px; margin: auto;
+  width: 200px;
+background-color: red;
+color: white;
+border: 1px solid black;
+}
