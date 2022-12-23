@@ -1,0 +1,40 @@
+// .sort()
+
+// 1.   Write a HOF to sort an array of numbers from largest to smallest
+const nums = [1,25,6,3,88,45,0]
+
+const numbers = [1, 25, 6, 3, 88, 45, 0];
+
+numbers.sort(compareFunction);
+
+console.log(numbers);
+
+function compareFunction(a, b) {
+
+  return a - b;  
+  
+}
+
+  // 2.   Write a HOF to sort peoples names by their length
+  let partyPeople = [{name: 'John', age: 25}, {name: 'Jordan', age: 18}, {name: 'Frank', age: 50}, {name: 'Anna', age: 12}]
+  partyPeople.sort((a, b)=> a.name.length -b.name.length);
+  console.log(partyPeople);
+// 3.   Write an HOF to sort an array of objects of people by their age youngest to oldest
+let partyPeople = [{name: 'John', age: 25}, {name: 'Jordan', age: 18}, {name: 'Frank', age: 50}, {name: 'Anna', age: 12}]
+partyPeople.sort((a, b) => a.age-b.age);
+console.log(partyPeople)
+
+
+
+// 4.   Write an HOF to sort an array of strings by the last letter of the string
+const strings = ['sam', 'john', 'daniel', 'vanessa']
+ strings.sort();
+ console.log(strings)
+ //this is simply done in a  way;
+
+
+
+ const partyPeople = [{name: 'John', age: 25}, {name: 'Jordan', age: 18}, {name: 'Frank', age: 50}, {name: 'Anna', age: 12}]
+
+ partyPeople.sort();
+ console.log(partyPeople);
