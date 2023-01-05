@@ -63,9 +63,9 @@ return string.match(regex);
 }
 
 // 10.   Write a function that utlizes regex to replicate the functionality of '  string  '.trim()
-import regex
+// import regex
 
-def trim(string):
+// def trim(string):
     return regex.sub(r^/s+(.+)/s/s+$, '', string)
 
  

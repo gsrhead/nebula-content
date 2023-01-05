@@ -1,55 +1,55 @@
-// .Map Practice 
+// // .Map Practice 
 
-// When you answer these questions I want to see your thought process in pseudo-code/comments.
+// // When you answer these questions I want to see your thought process in pseudo-code/comments.
 
-const message = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'] 
+// const message = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'] 
 
-// 1. Using the .map method and the provided array of strings (above), create a new array that containing only the first letter of each string.
-let message = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
+// // 1. Using the .map method and the provided array of strings (above), create a new array that containing only the first letter of each string.
+// let message = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
 
- const secretMessage = message.map(message => { //this will look for first element of each string 
+//  const secretMessage = message.map(message => { //this will look for first element of each string 
 
-   return message[0];// because we used 0 its the first number on elements
- })
+//    return message[0];// because we used 0 its the first number on elements
+//  })
 
-console.log(secretMessage.join('')); //this will be are output
-// i dont no why but this was hard to do
+// console.log(secretMessage.join('')); //this will be are output
+// // i dont no why but this was hard to do
 
-// 2. Using the .map method and the provided array of strings (above), create a new array containing only words that are longer than 6 characters.
-let message = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
+// // 2. Using the .map method and the provided array of strings (above), create a new array containing only words that are longer than 6 characters.
+// let message = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
 
- const secretMessage = message.filter(message => {
+//  const secretMessage = message.filter(message => {
 
-   return message[6];// will find the words string contain 6  from front to back Learning_____javascript.. at the the end..
+//    return message[6];// will find the words string contain 6  from front to back Learning_____javascript.. at the the end..
 
-console.log(secretMessage.join(''));// secretes a message learningJAvaScript;
-// i dont no why but this was hard too
+// console.log(secretMessage.join(''));// secretes a message learningJAvaScript;
+// // i dont no why but this was hard too
 
 
-// 3. Using the .map method and the provided array of strings (above), create a new array containing 3 strings. 
-// - The quote
-// - The year (2015)
-// - The source (Chris Pine - Learn JavaScript)
-// ==========================================================================================================================================================================
+// // 3. Using the .map method and the provided array of strings (above), create a new array containing 3 strings. 
+// // - The quote
+// // - The year (2015)
+// // - The source (Chris Pine - Learn JavaScript)
+// // ==========================================================================================================================================================================
 
- }  let message = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
+//  }  let message = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
 
- const bottom = message.filter(message => {// sned the message 
+//  const bottom = message.filter(message => {// sned the message 
 
-   return message[3]; //i put three to find 3 strings
- })
+//    return message[3]; //i put three to find 3 strings
+//  })
 
-console.log(bottom.splice(''));// i use splice to space each word apart.
-// i dont no why but this was hard to do
-["Learning","about","what","easily","first","time,","about","what","figure","out.","2015,","Chris","Pine,","Learn","JavaScript"// i dont no but
+// console.log(bottom.splice(''));// i use splice to space each word apart.
+// // i dont no why but this was hard to do
+// ["Learning","about","what","easily","first","time,","about","what","figure","out.","2015,","Chris","Pine,","Learn","JavaScript"// i dont no but
 
-// =======================================================================================================================================================================
-let message = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
+// // =======================================================================================================================================================================
+// let message = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
 
- const bottom = message.filter(message => {
+//  const bottom = message.filter(message => {
 
-   return message[0];// i put 0 to and another message showed
- })
+//    return message[0];// i put 0 to and another message showed
+//  })
 
-console.log(bottom.splice(''));
-// i dont no why but this was hard to 
+// console.log(bottom.splice(''));
+// // i dont no why but this was hard to 
