@@ -13,7 +13,9 @@ if (previousScores) {
 //^^ ADD AND RETRIEve
 
 function updateScoreboard(arr) {
-  for (let player of scoreBoard) {
+  scoreBoard = scoreBoard.sort((a, b) => b.score - a.score);
+  console.log("sort");
+  for (let player of scoreBoard.slice(0, 6)) {
     let leaderboard = document.querySelector("#leaderboard-list");
     let listitem = document.createElement("li");
     listitem.innerHTML = player.name + " " + player.score; //display score
@@ -34,6 +36,8 @@ function saveScore(playerName) {
   leaderboard.appendChild(listitem);
   // set local storage scoreboard appending our new score
   localStorage.setItem("scores", JSON.stringify(scoreBoard));
+  leaderboard.innerHTML = "";
+  updateScoreboard();
 }
 
 const score = document.querySelector(".score");
@@ -129,6 +133,25 @@ function moveEnemy(car) {
   enemy.forEach(function (item) {
     if (isCollide(car, item)) {
       endGame();
+      clearInterval(coinSpawnLoop);
+    }
+    if (item.y >= 950) {
+      item.y = -100;
+      item.style.left = Math.floor(Math.random() * 450) + "px";
+    }
+    item.y += player.speed;
+    item.style.top = item.y + "px";
+  });
+}
+/////////////////////////////////////////////
+function moveCoin(car) {
+  // this for loop
+  let coins = document.querySelectorAll(".coin");
+  coins.forEach(function (item) {
+    if (isCollide(car, item)) {
+      player.score += 100;
+      item.remove();
+      // play a sound byte
     }
     if (item.y >= 950) {
       item.y = -100;
@@ -156,6 +179,7 @@ window.requestAnimationFrame(gamePlay);
 
 function gamePlay() {
   let car = document.querySelector(".car");
+  let coin = document.querySelector(".coin");
   let road = gameArea.getBoundingClientRect();
   /*console.log(road);*/
 
@@ -163,6 +187,7 @@ function gamePlay() {
   if (player.start) {
     moveLines();
     moveEnemy(car);
+    moveCoin(car);
 
     if (keys.ArrowUp && player.y > road.top + 70) {
       player.y -= player.speed;
@@ -225,15 +250,36 @@ function start() {
                 console.log(car.offsetLeft);*/
 
   for (x = 0; x < 3; x++) {
+    // if first or last iterration x = 2 x = 0 creat  enemy car
     let enemyCar = document.createElement("div");
     enemyCar.setAttribute("class", "enemy"); // this loops creates element a
     // to run and generates a new element color car overtime.
     enemyCar.y = (x + 1) * 150 * -2;
     enemyCar.style.top = enemyCar.y + "px";
     enemyCar.style.backgroundColor = randomColor();
-    enemyCar.style.left = Math.floor(Math.random() * 550) + "px";
+    enemyCar.style.left = Math.floor(Math.random() * 1300) + "px";
     gameArea.appendChild(enemyCar);
+    let coinItem = document.createElement("div");
+    coinItem.setAttribute("class", "coin"); // this loops creates element a
+    // to run and generates a new element color car overtime.
+    coinItem.y = (x + 1) * 150 * -2;
+    coinItem.style.top = coinItem.y + "px";
+    coinItem.style.backgroundColor = randomColor();
+    coinItem.style.left = Math.floor(Math.random() * 550) + "px";
+    gameArea.appendChild(coinItem);
   }
+  let coinSpawnLoop = setInterval(() => {
+    for (x = 0; x < 3; x++) {
+      let coinItem = document.createElement("div");
+      coinItem.setAttribute("class", "coin"); // this loops creates element a
+      // to run and generates a new element color car overtime.
+      coinItem.y = (x + 1) * 150 * -2;
+      coinItem.style.top = coinItem.y + "px";
+      coinItem.style.backgroundColor = randomColor();
+      coinItem.style.left = Math.floor(Math.random() * 1300) + "px";
+      gameArea.appendChild(coinItem);
+    }
+  }, 10000);
 } // this will call from to the for loop up top^^^/
 function randomColor() {
   function c() {
@@ -251,4 +297,3 @@ function pad(val) {
     return valString;
   }
 }
-//
