@@ -83,8 +83,18 @@ function keyUp(e) {
 }
 
 function isCollide(a, b) {
+  //
   aRect = a.getBoundingClientRect();
   bRect = b.getBoundingClientRect();
+  if (
+    !(
+      aRect.bottom < bRect.top ||
+      aRect.top > bRect.bottom ||
+      aRect.right < bRect.left ||
+      aRect.left > bRect.right
+    )
+  ) {
+  }
   return !(
     aRect.bottom < bRect.top ||
     aRect.top > bRect.bottom ||
@@ -132,6 +142,8 @@ function moveEnemy(car) {
   let enemy = document.querySelectorAll(".enemy");
   enemy.forEach(function (item) {
     if (isCollide(car, item)) {
+      const thwomp = document.getElementById("thwomp");
+      thwomp.play();
       endGame();
       clearInterval(coinSpawnLoop);
     }
@@ -149,6 +161,8 @@ function moveCoin(car) {
   let coins = document.querySelectorAll(".coin");
   coins.forEach(function (item) {
     if (isCollide(car, item)) {
+      const coin = document.getElementById("coin");
+      coin.play();
       player.score += 100;
       item.remove();
       // play a sound byte
