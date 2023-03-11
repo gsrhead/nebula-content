@@ -1,0 +1,68 @@
+div{
+   font-family: 'Bangers', cursive;
+   font-size: 17px;
+   font-weight: 800;
+    }
+      body {
+        background-color: red;
+      overscroll-behavior: contain;
+ }
+ p{
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  font-size: 17px;
+  font-weight: 800;
+  justify-content: center;
+  flex-direction: column;
+ }
+      li{
+        font-size: 17px;
+        font-weight: 800;
+        
+      }
+      h1{
+        display: block;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 25px;
+        border: 13px solid skyblue;
+        width: fit-content;
+        }
+        /* setting rules for one specific id */
+        #title{
+        height: 90px;
+        line-height: 90px;
+        color: rgb(161, 36, 140);
+  }li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 30px 0;
+    box-shadow: rgb(140, 155, 6) 0px 54px 55px, black 04px 22px 43px;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 23px 6px 05px;
+  }
+  h3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .background{
+    background-image: url('/images/photo.webp');
+    background-size: 233%;
+    opacity: .2;
+    height: 100%;
+    position: fixed;
+    bottom: 55;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+  }
